@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_navigation_drawer_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/item_navigation_drawer_reminders"
+            android:icon="@drawable/ic_alarm_black_24px"
+            android:title="Recordatorios" />
+        <item
+            android:id="@+id/item_navigation_drawer_appointments"
+            android:checked="true"
+            android:icon="@drawable/ic_perm_contact_calendar_black_24px"
+            android:title="Citas" />
+        <item
+            android:id="@+id/item_navigation_drawer_events"
+            android:icon="@drawable/ic_date_range_black_24px"
+            android:title="Eventos" />
+        <item
+            android:id="@+id/item_navigation_drawer_contacts"
+            android:icon="@drawable/ic_perm_identity_black_24px"
+            android:title="Contactos" />
+    </group>
+
+    <item android:title="Subheader">
+        <menu>
+            <item
+                android:id="@+id/item_navigation_drawer_settings"
+                android:icon="@drawable/ic_settings_black_24px"
+                android:title="Ajustes" />
+            <item
+                android:id="@+id/item_navigation_drawer_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Compartir en Facebook" />
+        </menu>
+    </item>
+
+</menu>

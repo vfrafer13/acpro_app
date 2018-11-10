@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ap_registry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.vanessa.myapplication.AppointmentRegistration">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_appointment_registration"
+        android:layout_width="390dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="23dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearApp"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_appointment_registration">
+
+        <Button
+            android:id="@+id/btnSaveNewApp"
+            android:layout_width="119dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="134dp"
+            android:layout_marginStart="134dp"
+            android:onClick="onClick"
+            android:text="Guardar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTxtAddress"
+            android:layout_width="305dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="10dp"
+            android:hint="Dirección"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtContact" />
+
+        <EditText
+            android:id="@+id/editTxtContact"
+            android:layout_width="305dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="10dp"
+            android:hint="Contacto"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="239dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="111dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif"
+            android:text="Nueva Cita"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/md_blue_grey_800"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTxtAddAppDate"
+            android:layout_width="305dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Hora"
+            android:inputType="time"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtAddress" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

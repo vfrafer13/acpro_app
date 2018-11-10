@@ -1,0 +1,102 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vanessa.myapplication.Fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="208dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="88dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Bienvenido,"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/md_blue_grey_800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMel"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="88dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Melchor Paredes"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/md_blue_grey_800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWeather"
+        android:layout_width="80dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginEnd="122dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgWeatherIcon" />
+
+    <ImageView
+        android:id="@+id/imgWeatherIcon"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginStart="123dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtWeather"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewStatus"
+        android:layout_width="199dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Nada pendiente por hoy"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/md_blue_grey_800"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/main_pic"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewStatus" />
+
+</android.support.constraint.ConstraintLayout>
